@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEST OF ERKEK KUAFÖRÜ | Mehmet - Avcılar / İstanbul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --gold-light: #f3e5ab;
+            --gold-dark: #aa8c2c;
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+            --bg-secondary: #181818;
+            --text-light: #f5f5f5;
+            --text-muted: #a0a0a0;
+            --border-color: #2a2a2a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(18, 18, 18, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .btn-call-nav {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: #000;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(18, 18, 18, 1)), 
+                        url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=1600') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background-color: rgba(212, 175, 55, 0.15);
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero p.subtitle {
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: #000;
+            padding: 14px 32px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--border-color);
+            padding: 14px 32px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        section {
+            padding: 90px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.3rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+        }
+
+        .title-divider {
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+            margin: 15px auto 0;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .price-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .service-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .service-details h3 {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        .service-details p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .service-price {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .features {
+            background-color: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 40px auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .feature-item i {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .contact-info {
+            padding: 40px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+        }
+
+        .map-box {
+            width: 100%;
+            min-height: 380px;
+            border: none;
+        }
+
+        .cta-banner {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(0, 0, 0, 0.8)), var(--bg-card);
+            border: 1px solid var(--gold);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .cta-banner h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #0b0b0b;
+            border-top: 1px solid var(--border-color);
+            padding: 30px 20px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer p span {
+            color: var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.2rem; }
+            .contact-container { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo"><i class="fa-solid fa-scissors"></i> BEST OF</a>
+            <ul class="nav-links">
+                <li><a href="#hizmetler">Hizmetler & Fiyatlar</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#iletisim">İletişim & Konum</a></li>
+            </ul>
+            <a href="tel:05326991061" class="btn-call-nav"><i class="fa-solid fa-phone"></i> 0532 699 10 61</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Avcılar'ın En İyi Erkek Kuaförü</span>
+            <h1>BEST OF <span>ERKEK KUAFÖRÜ</span></h1>
+            <p class="subtitle">Mehmet ile Tarzınızı Baştan Yaratın</p>
+            <div class="hero-buttons">
+                <a href="tel:05326991061" class="btn-primary"><i class="fa-solid fa-calendar-check"></i> Hemen Randevu Al</a>
+                <a href="#hizmetler" class="btn-secondary">Fiyat Listesi</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="hizmetler">
+        <div class="section-title">
+            <h2>HİZMETLER & FİYAT LİSTESİ</h2>
+            <p>Kaliteli hizmet, hijyenik ortam ve profesyonel dokunuşlar</p>
+            <div class="title-divider"></div>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="price-card">
+                <div class="service-info">
+                    <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+                    <div class="service-details">
+                        <h3>Saç Tıraşı</h3>
+                        <p>Yüz tipinize uygun modern kesim</p>
+                    </div>
+                </div>
+                <div class="service-price">400 ₺</div>
+            </div>
+
+            <div class="price-card">
+                <div class="service-info">
+                    <div class="service-icon"><i class="fa-solid fa-user-ninja"></i></div>
+                    <div class="service-details">
+                        <h3>Sakal Tıraşı</h3>
+                        <p>Sakal şekillendirme ve düzeltme</p>
+                    </div>
+                </div>
+                <div class="service-price">300 ₺</div>
+            </div>
+
+            <div class="price-card">
+                <div class="service-info">
+                    <div class="service-icon"><i class="fa-solid fa-crown"></i></div>
+                    <div class="service-details">
+                        <h3>Saç / Sakal / Yıkama / Fön</h3>
+                        <p>Komple VIP bakım paketi</p>
+                    </div>
+                </div>
+                <div class="service-price">700 ₺</div>
+            </div>
+
+            <div class="price-card">
+                <div class="service-info">
+                    <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+                    <div class="service-details">
+                        <h3>Buharlı Cilt Bakımı</h3>
+                        <p>Gözenek açıcı rahatlatıcı bakım</p>
+                    </div>
+                </div>
+                <div class="service-price">400 ₺</div>
+            </div>
+
+            <div class="price-card">
+                <div class="service-info">
+                    <div class="service-icon"><i class="fa-solid fa-child"></i></div>
+                    <div class="service-details">
+                        <h3>Çocuk Tıraşı</h3>
+                        <p>Özel ilgi ve sabırlı kesim</p>
+                    </div>
+                </div>
+                <div class="service-price">350 ₺</div>
+            </div>
+
+            <div class="price-card">
+                <div class="service-info">
+                    <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <div class="service-details">
+                        <h3>Modern Saç Kesimi</h3>
+                        <p>Trend ve stil saç tasarımları</p>
+                    </div>
+                </div>
+                <div class="service-price">400 ₺</div>
+            </div>
+
+            <div class="price-card">
+                <div class="service-info">
+                    <div class="service-icon"><i class="fa-solid fa-razor"></i></div>
+                    <div class="service-details">
+                        <h3>Ustura Tıraşı</h3>
+                        <p>Geleneksel pürüzsüz sinekkaydı</p>
+                    </div>
+                </div>
+                <div class="service-price">250 ₺</div>
+            </div>
+        </div>
+    </section>
+
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;" id="hakkimizda">
+        <div class="features">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fa-solid fa-pump-soap"></i>
+                    <h3>%100 Hijyen</h3>
+                    <p>Steril ekipmanlar ve kişiye özel tek kullanımlık ürünler.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-award"></i>
+                    <h3>Uzman İşçilik</h3>
+                    <p>Mehmet tecrübesiyle saç ve sakalınıza hak ettiği değeri verin.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-couch"></i>
+                    <h3>Konforlu Mimarisi</h3>
+                    <p>Sıcak çay/kahve ikramımız eşliğinde ferah ortam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="iletisim">
+        <div class="section-title">
+            <h2>İLETİŞİM & KONUM</h2>
+            <p>Sizi dükkanımızda ağırlamaktan mutluluk duyarız</p>
+            <div class="title-divider"></div>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-user-check"></i></div>
+                    <div>
+                        <h4>Salon Sorumlusu</h4>
+                        <p>Mehmet</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <h4>Telefon / WhatsApp</h4>
+                        <p><a href="tel:05326991061" style="color:var(--text-muted);text-decoration:none;">0532 699 10 61</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <h4>Adres</h4>
+                        <p>Cihangir Mahallesi, Meşrutiyet Caddesi No:65/A<br>Avcılar / İstanbul</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <iframe class="map-box" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.637184918235!2d28.7180!3d40.9850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDU5JzA2LjAiTiAyOMKwNDMnMDUremU!5e0!3m2!1str!2str!4v1620000000000!5m2!1str!2str" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="cta-banner">
+            <h3>Randevunuzu Hemen Oluşturun</h3>
+            <p>Sıra beklemeden tıraş olmak ve detaylı bilgi almak için Mehmet ile iletişime geçebilirsiniz.</p>
+            <a href="tel:05326991061" class="btn-primary"><i class="fa-solid fa-phone-flip"></i> 0532 699 10 61 Tıkla & Ara</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 <span>BEST OF ERKEK KUAFÖRÜ</span> - Mehmet. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
